@@ -1,13 +1,14 @@
+device: 'cuda'
 robot:
   kinematics: 'diff'
-  length: 1.6
-  width: 2.0
+  length: 0.6
+  width: 0.55
 
 
 train:
   direct_train: true
   data_size: 100000
-  data_range: [-25, -25, 25, 25]
+  data_range: [-30, -30, 30, 30]
   batch_size: 256
   epoch: 5000
   valid_freq: 250
